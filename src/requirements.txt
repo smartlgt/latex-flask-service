@@ -1,0 +1,7 @@
+Flask==1.0.2
+latex==0.7.0
+
+raven[flask]==6.9.0
+requests #used for raven client handling
+
+gunicorn
