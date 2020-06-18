@@ -12,7 +12,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v1.1.0
         with:
-          username: ${{ secrets.DOCKER_PASSWORD_PUBLIC_REGISTRY }}
+          username: ${{ secrets.DOCKER_USERNAME_PUBLIC_REGISTRY }}
           password: ${{ secrets.DOCKER_PASSWORD_PUBLIC_REGISTRY }}
           registry: ${{ secrets.DOCKER_HOST_PUBLIC_REGISTRY }}
           repository: github/latex-flask-service
